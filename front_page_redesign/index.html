@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/0236dd5a02.js" crossorigin="anonymous"></script>
-
+<script src="main.js"></script>
     <style>
         @import url('./main.css');
     </style>
@@ -25,11 +25,20 @@
             <li><a href="#">Courses</a></li>
             <li><a href="#">For Companies</a></li>
             <li><a href="#">Military</a></li>
-            <i class="fa fa-bars"></i>
+            <i onclick="openNav()" class="fa fa-bars"></i>
 
         </ul>
     </nav>
 </div>
+<div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
  <body>
     <!--top photo-->
     <div class="grid-item-2">
