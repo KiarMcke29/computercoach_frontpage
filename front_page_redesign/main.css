@@ -39,6 +39,9 @@ nav ul a {
     padding: 10px;
     text-decoration: none;
 }
+.fa {
+    display: none;
+  }
 /*.grid-item-1 {
     display: flex;
     flex-wrap: wrap;
@@ -157,10 +160,18 @@ footer {
   justify-content: space-between;
 }
 /**********************************************************media*/
-@media (max-width: 800px) {
+/*@media (max-width: 800px) {
     nav li {
       flex-direction: column;
       text-align: center;
       font-size: 12px;
     }
+  }*/
+  @media (max-width: 600px) {
+  nav li {
+    display: none;
   }
+  .fa {
+    display: block;
+  }
+}
