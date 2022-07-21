@@ -150,13 +150,16 @@ footer {
     bottom: 0;
     margin-top: 20rem;
     padding: 10px 10px;
-   
+    margin-bottom: -35px;
+    margin-left:-8px;
+	margin-right: -7px;
     /*display: grid;
     grid-gap: 1rem;
     /*grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));*/
 }
 
 .top-foot {
+ 
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -224,6 +227,10 @@ footer {
  padding:8px 15px ;
 
 }
+.bottom-footer a {
+  color:var(--second-button);
+  text-decoration: none;
+}
 .copy {
   color: var(--background-color);
   display: flex;
@@ -249,5 +256,10 @@ footer {
 .nav-foot ul {
 flex-direction: column;
 }
-
+.top-foot {
+  justify-content: center;
+  display: block;
+  flex: 1 1 150px; /*  Stretching: */
+  flex: 0 1 150px; /*  No stretching: */
+}
 }
