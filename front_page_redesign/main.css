@@ -123,6 +123,7 @@ margin-top: 18px;
     justify-content: left;*/
 display:flex;
 flex-direction: column;
+width:min(50vw, 200px);
 /*height: 200px;*/
 }
 /***********************************************************buttons*/
@@ -143,6 +144,7 @@ flex-direction: column;
     color: var(--background-color);
     border: none;
     flex-direction: column;
+    cursor: pointer;
 }
 /***********************************************************footer*/
 footer {
@@ -186,7 +188,7 @@ footer {
     width: 100%;
     justify-content: space-between;
     list-style: none;
-    padding: 0 10px;
+    padding: 0 25px;
     overflow: hidden;
 }
 .nav-foot li {
@@ -198,6 +200,9 @@ footer {
 .nav-foot ul a {
     color: rgb(175, 175, 175);
     text-decoration: none;
+}
+.about {
+  margin-top:-80px;
 }
 .sub-nav-foot {
     display: block;
@@ -225,6 +230,7 @@ footer {
 }
 .icons .fa {
  padding:8px 15px ;
+ cursor: pointer;
 
 }
 .bottom-footer a {
@@ -251,15 +257,22 @@ footer {
   .fa {
     display: block;
   }
+  .about {
+margin-top: 0;
+  }
+  .nav-foot ul {
+    flex-direction: column;
+    }
 }
-@media (max-width: 600px) {
-.nav-foot ul {
-flex-direction: column;
-}
-.top-foot {
-  justify-content: center;
-  display: block;
-  flex: 1 1 150px; /*  Stretching: */
-  flex: 0 1 150px; /*  No stretching: */
-}
+
+@media (max-width: 530px) {
+  .top-foot {
+    justify-content: center;
+    display: block;
+    flex: 1 1 150px; /*  Stretching: */
+    flex: 0 1 150px; /*  No stretching: */
+  }
+  .news {
+    margin-top: 10px;;
+  }
 }
