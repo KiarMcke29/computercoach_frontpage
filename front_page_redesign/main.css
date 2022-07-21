@@ -24,13 +24,14 @@ flex-wrap: wrap;
 nav ul {
     list-style: none;
 	display: flex;
-	font-size: 18px;
+	/*font-size: 2vw 18px*/;
   padding: 0 10px;
 }
 nav li {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    font-size: 2vw;
 }
 
 nav ul a {
@@ -149,6 +150,9 @@ footer {
     bottom: 0;
     margin-top: 20rem;
     padding: 10px 10px;
+    /*display: grid;
+    grid-gap: 1rem;
+    /*grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));*/
 }
 
 .top-foot {
@@ -210,11 +214,17 @@ footer {
       font-size: 12px;
     }
   }*/
-  @media (max-width: 850px) {
+  @media (max-width: 600px) {
   nav li {
     display: none;
   }
   .fa {
     display: block;
   }
+}
+@media (max-width: 600px) {
+.nav-foot ul {
+flex-direction: column;
+}
+
 }
