@@ -15,6 +15,7 @@ flex: 0 1 150px; /*  No stretching: */
 justify-content: space-between;
 background-color: var(--background-color);
 top: 0;
+margin:0px -8px ;
 width: 100%;
 padding: 0 -3px;
 flex-direction: row;
@@ -32,6 +33,7 @@ nav li {
     flex-direction: column;
     overflow: hidden;
     font-size: clamp(14px, 2.0vw, 20px);   
+    position: relative;
 }
 
 nav ul a {
@@ -58,7 +60,6 @@ nav ul a {
     top: 0;
     left: 0;
     background-color: var(--second-background-color);
-    
     overflow-x: hidden;
     transition: 0.5s;
   }
@@ -90,7 +91,39 @@ nav ul a {
     right: 45px;
     font-size: 60px;
   }
-  
+  /********************************************************drop content*/
+  .drop {
+    height: 0px;
+    width:50px ;
+    position:relative;
+    z-index:1;
+    top: 0;
+    left: 0;
+    background-color: var(--background-color);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  .content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .content a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--background-color);
+    display: block;
+    transition: 0.3s;
+  }
+  .content .closehead {
+    position: absolute;
+    top: 0;
+    right: 45px;
+    font-size: 60px;
+  }
 /********************************************************photo*/
 .top-photo {
     background: url(media/AdobeStock_377855570.jpeg)  no-repeat center center/cover;;
@@ -114,6 +147,7 @@ nav ul a {
  justify-content: left;
 display: flex;
 margin-top: 18px;
+margin-left:5px;
  height:10vh ;
  display: flex;
 }
@@ -152,7 +186,7 @@ footer {
     bottom: 0;
     margin-top: 20rem;
     padding: 10px 10px;
-    margin-bottom: -35px;
+    margin-bottom: -10px;
     margin-left:-8px;
 	margin-right: -7px;
     /*display: grid;
@@ -250,7 +284,7 @@ footer {
       font-size: 12px;
     }
   }*/
-  @media (max-width: 600px) {
+  @media (max-width: 640px) {
   nav li {
     display: none;
   }

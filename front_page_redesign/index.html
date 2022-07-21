@@ -22,17 +22,18 @@
         </div>
        
         <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Courses</a></li>
-            <li><a href="#">For Companies</a></li>
-            <li><a href="#">Military</a></li>
+            <li><a href="#">About  <i onmouseout="closeHead()" onmouseover="openHead()" class="fa fa-angle-down"></i></a>
+            </li>
+            <li><a href="#">Courses  <i onmouseout="closeHead()"  onmouseover="openHead()"class="fa fa-angle-down"></i></a></li>
+            <li><a href="#">For Companies  <i onmouseout="closeHead()"  onmouseover="openHead()" class="fa fa-angle-down"></i></a></li>
+            <li><a href="#">Military  <i onmouseout="closeHead()"  onmouseover="openHead()" class="fa fa-angle-down"></i></a></li>
             <i onclick="openNav()" class="fa fa-bars"></i>
 
         </ul>
     </nav>
 </div>
 <div id="myNav" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="javascript:void(0)" class="closebtn" >&times;</a>
     <div class="overlay-content">
       <a href="#">About</a>
       <a href="#">Services</a>
@@ -40,6 +41,15 @@
       <a href="#">Contact</a>
     </div>
   </div>
+<div id="myHead" class="drop">
+    <a href="javascript:void(0)" class="closehead" >&times;"></a>
+    <div class="content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+    </div>
+</div>
  <body>
     <!--top photo-->
     <div class="grid-item-2">
@@ -114,6 +124,7 @@
         <div class="icons">
             
             <i class="fa fa-facebook"></i>
+           
             <i class="fa fa-linkedin"></i>
             <i class="fa fa-twitter"></i>
         </div>
