@@ -31,7 +31,7 @@ nav li {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    font-size: 2vw;
+    font-size: clamp(14px, 2.0vw, 20px);   
 }
 
 nav ul a {
@@ -40,7 +40,7 @@ nav ul a {
     padding: 10px;
     text-decoration: none;
 }
-.fa {
+.fa-bars {
     display: none;
     margin-right:10px ;
     padding: 10px;
@@ -98,10 +98,10 @@ nav ul a {
     background-position:cover center;*/
     display: flex;
     flex-direction:column ;
-    height: 100vh;
+    height:max(40vw ,100vh);
     justify-content:center;
    place-items:center;
-   width: 100%;
+   width: max(40vw, 100%); 
 }
 .grid-item-2 {
     display: grid;
@@ -150,6 +150,7 @@ footer {
     bottom: 0;
     margin-top: 20rem;
     padding: 10px 10px;
+   
     /*display: grid;
     grid-gap: 1rem;
     /*grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));*/
@@ -192,7 +193,7 @@ footer {
     align-items: center;
 }
 .nav-foot ul a {
-    color: white;
+    color: rgb(175, 175, 175);
     text-decoration: none;
 }
 .sub-nav-foot {
@@ -206,7 +207,27 @@ footer {
 }
 .sub-nav-foot  li {
   display: block;
-  padding: 15px 0px 15px;
+  padding: 12px 0px 12px;
+}
+.sub-nav-foot ul a{
+  color: var(--background-color);
+}
+.bottom-footer{
+  color: var(--background-color);
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ flex-wrap: wrap;
+ margin:0px 15px;
+}
+.icons .fa {
+ padding:8px 15px ;
+
+}
+.copy {
+  color: var(--background-color);
+  display: flex;
+  justify-content: center;
 }
 /**********************************************************media*/
 /*@media (max-width: 800px) {
