@@ -4,6 +4,7 @@
     --button-color:black;
     --second-button:red;
     --underline: rgb(209, 209, 209,0.2) 2px solid;
+    
 }
 
 /* ************************************************** nav */
@@ -51,17 +52,60 @@ nav ul a {
     display: flex;
     flex-wrap: wrap;
 }*/
+/********************************************************drop content*/
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 /********************************************************nav over lay*/
 .overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: var(--second-background-color);
-    overflow-x: hidden;
-    transition: 0.5s;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--second-background-color);
+  overflow-x: hidden;
+  transition: 0.5s;
   }
   
   .overlay-content {
@@ -75,14 +119,16 @@ nav ul a {
   .overlay a {
     padding: 8px;
     text-decoration: none;
-    font-size: 28px;
+    font-size: 20px;
     color: var(--background-color);
-    display: block;
-   
+    display: flex;
+    justify-content:space-between;
+    padding: 20px 10px 20px;
+  
     transition: 0.3s;
   }
   
-  .overlay a:hover, .overlay a:focus {
+ .overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
   }
   
@@ -92,48 +138,12 @@ nav ul a {
     right: 45px;
     font-size: 60px;
   }
-  /********************************************************drop content*/
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  }
   
-  .dropdown .dropbtn {
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-  }
-  
-  
-  .dropdown-content {
+  /********************************************************overlay-dropdown*/
+  .container {
     display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
+    background-color: #262626;
+    padding-left: 8px;
   }
 /********************************************************photo*/
 .top-photo {
@@ -147,7 +157,7 @@ nav ul a {
    place-items:center;
    width: max(40vw, 100%); 
 }
-.grid-item-2 {
+/*.grid-item-2 {
     display: grid;
     place-items: center;
 }
