@@ -6,10 +6,4 @@ function openNav() {
     document.getElementById("myNav").style.width = "0%";
   }
 
-  function openHead() {
-    document.getElementById("myHead").style.height = "100%";
-  }
-  
-  function closeHead() {
-    document.getElementById("myHead").style.height = "0%";
-  }
+ 
